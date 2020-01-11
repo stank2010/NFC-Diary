@@ -2,14 +2,16 @@ import React, { Component } from 'react'
 
 class ShowText extends Component {
   state = {
-    text: this.props.textOut
+    head: this.porps.head,
+    content: this.porps.content
   }
   render() {
     return (
       <div className="card w-45">
+        <h5 className="card-title">{this.state.head}</h5>
         <div className="card-body">
-          <p>{this.state.text}</p>
-          <button className="button" onClick={() => { this.props.onDelete(this.props.id) }}>Delete</button>
+          <button className="btn btn-danger float-right">Delete</button>
+          <p>{this.state.head }</p>
         </div>
       </div>
     )
