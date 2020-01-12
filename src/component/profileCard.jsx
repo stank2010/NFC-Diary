@@ -10,10 +10,14 @@ class Profile extends Component {
   render() {
     return (
       <div className="card">
-        <div className="card-body">
+        <div className="card-body ">
           <div className="row">
             <div className="col-4">
-              <img className="float-right" style={{ width: 100, height: 'auto' }} src={ProfilePicture} alt="Hello" />
+              <img 
+                className="float-right" 
+                style={{ width: 100, height: 161 }/*Golden ratio*/} 
+                src={ProfilePicture} alt="Hello" 
+              />
             </div>
             <div className="col-8">
               <h3>{this.state.username}</h3>

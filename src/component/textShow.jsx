@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 class ShowText extends Component {
   state = {
-    head: this.porps.head,
-    content: this.porps.content
+    head: this.props.head,
+    content: this.props.content
   }
   render() {
     return (

@@ -20,15 +20,15 @@ class Profile extends Component {
           <hr />
           <div style={{ width: "50%", margin: "auto" }}>
             <div>
-              <label class="label-name" >Name</label>
+              <label className="label-name" >Name</label>
               <input type="text" defaultValue={this.state.name} />
             </div>
             <div>
-              <label class="label-email">Email</label>
+              <label className="label-email">Email</label>
               <input type="text" defaultValue={this.state.email} />
             </div>
             <div>
-              <label class="label-status" >Status</label>
+              <label className="label-status" >Status</label>
               <input type="" defaultValue={this.state.status} />
             </div>
           </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../component/navbar'
 import Profile from '../component/profileCard'
 import Textshow from '../component/textShow'
+import ListDiary from '../component/listDiary'
 
 class MainPage extends Component {
   render() {
@@ -10,8 +11,11 @@ class MainPage extends Component {
       <div>
         <Navbar></Navbar>
         <Profile></Profile>
-        <Link to="/editDiary">Add</Link>
+        <ListDiary></ListDiary>
+        {/*
+        <Link to="/editDiary"><span className="fas fa-plus"></span>Add</Link>
         <Textshow />
+        */}
       </div>
     )
   }
